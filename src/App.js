@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const App = () => {
-	return <div>cos</div>;
+  return <div>cos</div>;
 };
 
 export default App;

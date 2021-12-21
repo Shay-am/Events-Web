@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const FreeTrial = () => {
+export const Trial = () => {
   return <div>Free trial Page</div>;
 };

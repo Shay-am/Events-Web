@@ -4,7 +4,7 @@ export const StyledBurger = styled.div`
   display: none;
   position: absolute;
   top: 1%;
-  right: 0.3rem;
+  right: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -54,19 +54,20 @@ export const StyledBurger = styled.div`
   }
 `;
 
-export const NavHamburger = styled.div`
+export const NavHamburger = styled.nav`
+  display: none;
   position: absolute;
   top: 0;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(200%)')};
   right: 1px;
   width: 30rem;
   height: 100vh;
-  background-color: black;
   transition: transform 0.3s ease-in-out;
 
-  @media (min-width: 500px) {
+  @media (max-width: 500px) {
+    display: block;
   }
-  @media (max-width: 330px) {
+  @media (max-width: 400px) {
     width: 100vw;
   }
 `;

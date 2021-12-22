@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
        width: 100vw;
       font-size: 62.5%;
+      font-family: 'Roboto', sans-serif;;
   }
   body {
     font-size: 1.6rem;

@@ -1,5 +1,11 @@
 import React from 'react';
-import { Wrapper, NavLinkItem, NavLinksCointar, NavRightContainer, StyledNavItem } from './styles';
+import {
+  Wrapper,
+  NavLinkItem,
+  NavLinksCointar,
+  NavRightContainer,
+  StyledNavItem
+} from './Menu.styled';
 
 export const Menu = () => {
   return (

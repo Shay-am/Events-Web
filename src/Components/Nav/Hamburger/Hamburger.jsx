@@ -1,8 +1,9 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
-import { NavHamburger, StyledBurger } from './styles';
+import PropTypes from 'prop-types';
 
-export const Hamburger = ({ isOpen, setIsOpen }) => {
+import { NavHamburger, StyledBurger } from './Hamburger.styled';
+
+export const Hamburger = ({ isOpen, setIsOpen, children }) => {
   return (
     <>
       <StyledBurger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
@@ -10,11 +11,12 @@ export const Hamburger = ({ isOpen, setIsOpen }) => {
         <div />
         <div />
       </StyledBurger>
-      <NavHamburger isOpen={isOpen}> cos</NavHamburger>
+      <NavHamburger isOpen={isOpen}>{children}</NavHamburger>
     </>
   );
 };
 Hamburger.propTypes = {
-  isOpen: bool.isRequired,
-  setIsOpen: func.isRequired
+  isOpen: PropTypes.bool.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
+  children: PropTypes.element
 };

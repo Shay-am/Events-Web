@@ -9,12 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale; 
   }
   html {
+       width: 100vw;
       font-size: 62.5%;
   }
   body {
     font-size: 1.6rem;
-
- 
+    width: 100vw;
    
   }
 `;

@@ -4,9 +4,12 @@ import { NavLink } from 'react-router-dom';
 export const Wrapper = styled.nav`
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-
   justify-content: space-around;
   margin-top: 1rem;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const NavLinksCointar = styled.div`
